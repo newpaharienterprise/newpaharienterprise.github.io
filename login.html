@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in : New Pahari Enterprise</title>
+    <!-- Favicon -->
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <!-- Restaurant name and navigation -->
+            <h1>Log in Interface</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <br>
+
+    <!-- Form container -->
+    <div class="form-container">
+        <!-- Form for submitting messages -->
+        <form action="{{ url_for('contact') }}" method="POST" class="center-form">
+            <!-- Input field for name -->
+            <input type="text" id="name" name="name" required placeholder="Username">
+            <!-- Input field for email -->
+            <input type="password" id="password" name="email" required placeholder="Password">
+            <!-- Submit button -->
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+        <!-- Signup link -->
+        <p>Don't have an account? <a href="signup.html" class="signup-button">Sign Up</a></p>
+    </div>
+</body>
+</html>
